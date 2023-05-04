@@ -149,7 +149,7 @@ button:hover {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #1a1a1a;
-    color: #e0e0e0;
+    color: #acacac;
 }
 
 .footer ul {
@@ -159,7 +159,7 @@ button:hover {
 }
 
 a {
-    color: #acacac;
+    color: #d2d2d2;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     text-decoration: none;
 }
