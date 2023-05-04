@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuroanatomy</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Neuroanatomy</h1>
+    <div id="brain-wrapper">
+        <img id="brain-image" src="mri.png" alt="brain" onload="setArrowAndLabelSize()" />
+        <div id="brain-container"></div>
+    </div>
+    <div id="modal">
+        <p id="modal-text"><br></p>
+    </div>
+    <div id="input-container">
+        <input type="text" id="brain-area-input" placeholder="Enter brain area" />
+        <button onclick="submitAnswer()">Submit</button>
+        <button id='reset-button' onclick="resetQuiz()">Reset</button>
+    </div>
+    <div id="image-selection">
+        <label for="image-select">Select an image:</label>
+        <select id="image-select">
+            <option value="mri">MRI</option>
+            <option value="cartoon-sagittal">Sagittal Cartoon</option>
+            <option value="lobes">Lobes Cartoon</option>
+            <option value="cortex">Cortex Cartoon</option>
+            <option value="midbrain">Midbrain Rendering</option>
+            <option value="basal-ganglia-mb">Basal Ganglia, MB</option>
+            <option value="basal-ganglia-ac">Basal Ganglia, AC</option>
+        </select>
+    </div>
+    <div id="hint-toggle">
+        <label for="hint-checkbox">Hint:</label>
+        <input type="checkbox" id="hint-checkbox" onchange="toggleHints()" />
+    </div>
+    <div id="brain-areas-list-container">
+        <!-- The brain areas list will be inserted here by the JavaScript code -->
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+<section class="footer">
+    <div class="container">
+        <ul class="copyright">
+            <li>© Tom Childs. All rights reserved. <a href="http://tomchilds.com">Return to landing page</a>.</li>
+        </ul>
+    </div>
+</section>
+</html>

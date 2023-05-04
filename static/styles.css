@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+h1 {
+    margin: 1.5rem;
+}
+
+#brain-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#brain-image {
+    max-width: 100%;
+    height: auto;
+}
+
+#brain-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    position: absolute;
+    display: none;
+}
+
+.label {
+    position: absolute;
+    display: none;
+    font-weight: bold;
+    color: #ff1058;
+}
+
+#input-container {
+    margin-bottom: 1rem;
+}
+
+.modal-text {
+    font-size: 24px;
+}
+
+#brain-area-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #4a4a4a;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    outline: none;
+    transition: 0.15s;
+}
+
+#brain-area-input:hover {
+    border-color: #707070;
+    box-shadow: 0 0 4px #545454;
+}
+
+#brain-area-input:focus {
+    border-color: #9e9e9e;
+    box-shadow: 0 0 4px #767676;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4a4a4a;
+    border: none;
+    color: #e0e0e0;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #767676;
+}
+
+.arrow {
+    position: absolute;
+    display: none;
+    height: auto;
+    opacity: 0.5;
+}
+
+#image-selection {
+    display: inline-block;
+}
+
+#image-select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #2b2b2b;
+    border: 2px solid #4a4a4a;
+    color: #e0e0e0;
+    border-radius: 4px;
+    transition: 0.15s;
+}
+
+#image-select:hover {
+    border-color: #707070;
+    box-shadow: 0 0 4px #545454;
+}
+
+#image-select:focus {
+    border-color: #9e9e9e;
+    box-shadow: 0 0 4px #767676;
+}
+
+#hint-toggle {
+    display: inline-block;
+}
+
+#hint-checkbox:hover{
+    border-color: #707070;
+    box-shadow: 0 0 4px #767676;
+}
+
+#hint-checkbox:checked{
+    accent-color: #4a4a4a;
+}
+
+#hint-checkbox:checked:hover{
+    accent-color: #767676;
+    box-shadow: 0 0 4px #767676;
+}
+
+#brain-areas-list-container {
+    min-height: 19vh;
+    margin: 1%;
+}
+
+#brain-areas-list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    bottom: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.footer ul {
+    bottom:0;
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #acacac;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
